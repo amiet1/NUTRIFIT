@@ -1,0 +1,8 @@
+2026-04-11 19:27:33,272 - main - INFO - === Logging system initialized ===
+2026-04-11 19:27:33,272 - main - INFO - Log file: logs/app_20260411_192733.log
+2026-04-11 19:27:33,273 - main - INFO - Log level: INFO
+2026-04-11 19:27:33,273 - main - INFO - Timestamp: 20260411_192733
+2026-04-11 19:27:33,367 - main - WARNING - Failed to import module 'routers.aihub': cannot import name 'AIHubService' from 'services.aihub' (/Users/marcy/Development/Art/NUTRIFIT/backend/services/aihub.py)
+2026-04-11 19:27:33,370 - main - DEBUG - No routers discovered in package 'routers'
+2026-04-11 19:27:33,373 - main - INFO - === Application startup initiated ===
+2026-04-11 19:27:33,373 - main - INFO - === Application startup completed successfully ===

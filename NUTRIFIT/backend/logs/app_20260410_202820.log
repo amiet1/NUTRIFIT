@@ -1,0 +1,7 @@
+2026-04-10 20:28:20,003 - main - INFO - === Logging system initialized ===
+2026-04-10 20:28:20,003 - main - INFO - Log file: logs/app_20260410_202820.log
+2026-04-10 20:28:20,003 - main - INFO - Log level: INFO
+2026-04-10 20:28:20,003 - main - INFO - Timestamp: 20260410_202820
+2026-04-10 20:28:20,016 - main - DEBUG - No routers discovered in package 'routers'
+2026-04-10 20:28:20,023 - main - INFO - === Application startup initiated ===
+2026-04-10 20:28:20,023 - main - INFO - === Application startup completed successfully ===

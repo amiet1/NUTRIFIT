@@ -1,0 +1,8 @@
+2026-04-11 21:11:34,788 - main - INFO - === Logging system initialized ===
+2026-04-11 21:11:34,789 - main - INFO - Log file: logs/app_20260411_211134.log
+2026-04-11 21:11:34,789 - main - INFO - Log level: INFO
+2026-04-11 21:11:34,789 - main - INFO - Timestamp: 20260411_211134
+2026-04-11 21:11:34,791 - main - WARNING - Failed to import module 'routers.aihub': No module named 'openai'
+2026-04-11 21:11:34,793 - main - DEBUG - No routers discovered in package 'routers'
+2026-04-11 21:11:34,796 - main - INFO - === Application startup initiated ===
+2026-04-11 21:11:34,796 - main - INFO - === Application startup completed successfully ===

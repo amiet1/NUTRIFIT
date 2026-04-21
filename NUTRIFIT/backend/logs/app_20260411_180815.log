@@ -1,0 +1,7 @@
+2026-04-11 18:08:15,003 - main - INFO - === Logging system initialized ===
+2026-04-11 18:08:15,003 - main - INFO - Log file: logs/app_20260411_180815.log
+2026-04-11 18:08:15,004 - main - INFO - Log level: INFO
+2026-04-11 18:08:15,004 - main - INFO - Timestamp: 20260411_180815
+2026-04-11 18:08:15,202 - main - INFO - Included router: routers.aihub.router
+2026-04-11 18:08:15,224 - main - INFO - === Application startup initiated ===
+2026-04-11 18:08:15,226 - main - INFO - === Application startup completed successfully ===

@@ -104,3 +104,4 @@ class GenImgResponse(BaseModel):
     )
     model: str = Field(..., description="Name of the model used.")
     revised_prompt: Optional[str] = Field(default=None, description="Refined prompt used for generation.")
+
