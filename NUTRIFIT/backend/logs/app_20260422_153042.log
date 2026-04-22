@@ -1,0 +1,6 @@
+2026-04-22 15:30:42,204 - main - INFO - === Logging system initialized ===
+2026-04-22 15:30:42,787 - main - WARNING - Failed to import module 'routers.auth': cannot import name 'get_db' from 'core.database' (/Users/marcy/Development/Art/NUTRIFIT/backend/core/database.py)
+2026-04-22 15:30:42,993 - main - WARNING - Failed to import module 'routers.diet_plans': cannot import name 'get_db' from 'core.database' (/Users/marcy/Development/Art/NUTRIFIT/backend/core/database.py)
+2026-04-22 15:30:42,994 - main - INFO - Included router: routers.health.router
+2026-04-22 15:30:42,995 - main - INFO - === Application startup initiated ===
+2026-04-22 15:33:12,994 - main - INFO - === Application shutdown ===
