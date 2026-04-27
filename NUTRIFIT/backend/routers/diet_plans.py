@@ -9,9 +9,10 @@ from pydantic import BaseModel
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from core.database import get_db
-# from services.diet_plans import Diet_plansService
+from services.diet_plans import Diet_plansService
 from dependencies.auth import get_current_user
 from schemas.auth import UserResponse
+from dependencies.database import DbSession
 
 # Set up logging
 logger = logging.getLogger(__name__)

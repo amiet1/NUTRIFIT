@@ -1,0 +1,170 @@
+2026-04-26 19:23:56,697 - main - INFO - === Logging system initialized ===
+2026-04-26 19:23:57,533 - main - INFO - Included router: routers.auth.router
+2026-04-26 19:23:57,579 - main - INFO - Included router: routers.diet_plans.router
+2026-04-26 19:23:57,580 - main - INFO - Included router: routers.health.router
+2026-04-26 19:23:57,617 - main - INFO - Included router: routers.meal_logs.router
+2026-04-26 19:23:57,640 - main - INFO - Included router: routers.settings.router
+2026-04-26 19:23:57,677 - main - INFO - Included router: routers.storage.router
+2026-04-26 19:23:57,684 - main - INFO - Included router: routers.user.router
+2026-04-26 19:23:57,722 - main - INFO - Included router: routers.weight_entries.router
+2026-04-26 19:23:57,723 - main - INFO - === Application startup initiated ===
+2026-04-26 19:24:32,589 - routers.auth - INFO - [token/exchange] Manual bypass triggered for Admin
+2026-04-26 19:24:32,647 - main - ERROR - Exception: AttributeError: 'Settings' object has no attribute 'jwt_secret_key'
+Traceback (most recent call last):
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/starlette/middleware/cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/starlette/middleware/cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/routers/auth.py", line 153, in exchange_platform_token
+    app_token, expires_at, _ = await auth_service.issue_app_token(user=user)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/services/auth.py", line 69, in issue_app_token
+    token = create_access_token(claims, expires_minutes=expires_minutes)
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/core/auth.py", line 78, in create_access_token
+    if not settings.jwt_secret_key:
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/pydantic/main.py", line 1026, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'Settings' object has no attribute 'jwt_secret_key'
+
+2026-04-26 19:24:34,995 - routers.auth - INFO - [token/exchange] Manual bypass triggered for Admin
+2026-04-26 19:24:34,998 - main - ERROR - Exception: AttributeError: 'Settings' object has no attribute 'jwt_secret_key'
+Traceback (most recent call last):
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/starlette/middleware/cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/starlette/middleware/cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/routers/auth.py", line 153, in exchange_platform_token
+    app_token, expires_at, _ = await auth_service.issue_app_token(user=user)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/services/auth.py", line 69, in issue_app_token
+    token = create_access_token(claims, expires_minutes=expires_minutes)
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/core/auth.py", line 78, in create_access_token
+    if not settings.jwt_secret_key:
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/pydantic/main.py", line 1026, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'Settings' object has no attribute 'jwt_secret_key'
+
+2026-04-26 19:24:35,964 - routers.auth - INFO - [token/exchange] Manual bypass triggered for Admin
+2026-04-26 19:24:35,968 - main - ERROR - Exception: AttributeError: 'Settings' object has no attribute 'jwt_secret_key'
+Traceback (most recent call last):
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/starlette/middleware/cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/starlette/middleware/cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/starlette/routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/fastapi/routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/fastapi/routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/fastapi/routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/fastapi/routing.py", line 328, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/routers/auth.py", line 153, in exchange_platform_token
+    app_token, expires_at, _ = await auth_service.issue_app_token(user=user)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/services/auth.py", line 69, in issue_app_token
+    token = create_access_token(claims, expires_minutes=expires_minutes)
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/core/auth.py", line 78, in create_access_token
+    if not settings.jwt_secret_key:
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/marcy/Development/Art/NUTRIFIT/backend/venv/lib/python3.13/site-packages/pydantic/main.py", line 1026, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'Settings' object has no attribute 'jwt_secret_key'
+
+2026-04-26 19:26:55,255 - main - INFO - === Application shutdown ===

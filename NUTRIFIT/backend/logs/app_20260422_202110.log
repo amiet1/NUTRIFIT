@@ -1,0 +1,11 @@
+2026-04-22 20:21:10,979 - main - INFO - === Logging system initialized ===
+2026-04-22 20:21:11,786 - main - INFO - Included router: routers.auth.router
+2026-04-22 20:21:11,841 - main - INFO - Included router: routers.diet_plans.router
+2026-04-22 20:21:11,841 - main - INFO - Included router: routers.health.router
+2026-04-22 20:21:11,882 - main - INFO - Included router: routers.meal_logs.router
+2026-04-22 20:21:11,882 - main - WARNING - Failed to import module 'routers.settings': cannot import name 'get_admin_user' from 'dependencies.auth' (/Users/marcy/Development/Art/NUTRIFIT/backend/dependencies/auth.py)
+2026-04-22 20:21:11,883 - main - WARNING - Failed to import module 'routers.storage': cannot import name 'get_admin_user' from 'dependencies.auth' (/Users/marcy/Development/Art/NUTRIFIT/backend/dependencies/auth.py)
+2026-04-22 20:21:11,890 - main - INFO - Included router: routers.user.router
+2026-04-22 20:21:11,933 - main - INFO - Included router: routers.weight_entries.router
+2026-04-22 20:21:11,933 - main - INFO - === Application startup initiated ===
+2026-04-23 09:24:06,172 - main - INFO - === Application shutdown ===

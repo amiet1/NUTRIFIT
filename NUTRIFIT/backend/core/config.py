@@ -1,7 +1,7 @@
 import logging
 import os
 from typing import Any
-from pydantic_settings import BaseSettings
+from pydantic_settings import BaseSettings, SettingsConfigDict
 
 logger = logging.getLogger(__name__)
 
@@ -11,10 +11,9 @@ class Settings(BaseSettings):
     debug: bool = False
     version: str = "1.0.0"
 
-    # AI Configuration (This is what your AIHub service needs)
+    # Infrastructure
+    database_url: str = "sqlite+aiosqlite:///./nutrifit.db"
     app_ai_key: str = "" 
-
-    # Server
     host: str = "0.0.0.0"
     port: int = 8000
 
@@ -22,6 +21,14 @@ class Settings(BaseSettings):
     is_lambda: bool = False
     lambda_function_name: str = "fastapi-backend"
     aws_region: str = "us-east-1"
+
+    # This replaces the old 'class Config' and handles the .env loading correctly
+    model_config = SettingsConfigDict(
+        env_file=".env", 
+        env_file_encoding="utf-8", 
+        case_sensitive=False, 
+        extra="ignore"
+    )
 
     @property
     def backend_url(self) -> str:
@@ -34,22 +41,5 @@ class Settings(BaseSettings):
             display_host = "127.0.0.1" if self.host == "0.0.0.0" else self.host
             return os.environ.get("PYTHON_BACKEND_URL", f"http://{display_host}:{self.port}")
 
-    class Config:
-        env_file = ".env"
-        env_file_encoding = "utf-8"
-        case_sensitive = False
-        extra = "ignore"
-
-    def __getattr__(self, name: str) -> Any:
-        """Dynamically read attributes from environment variables."""
-        env_var_name = name.upper()
-
-        if env_var_name in os.environ:
-            value = os.environ[env_var_name]
-            self.__dict__[name] = value
-            return value
-
-        raise AttributeError(f"'{self.__class__.__name__}' object has no attribute '{name}'")
-
-# This is the vital line that main.py needs!
+# This creates the singleton instance for the rest of the app
 settings = Settings()

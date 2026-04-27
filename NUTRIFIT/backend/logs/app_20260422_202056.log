@@ -1,0 +1,11 @@
+2026-04-22 20:20:56,103 - main - INFO - === Logging system initialized ===
+2026-04-22 20:20:56,974 - main - INFO - Included router: routers.auth.router
+2026-04-22 20:20:56,975 - main - WARNING - Failed to import module 'routers.diet_plans': unexpected indent (diet_plans.py, line 12)
+2026-04-22 20:20:56,976 - main - INFO - Included router: routers.health.router
+2026-04-22 20:20:57,029 - main - INFO - Included router: routers.meal_logs.router
+2026-04-22 20:20:57,030 - main - WARNING - Failed to import module 'routers.settings': cannot import name 'get_admin_user' from 'dependencies.auth' (/Users/marcy/Development/Art/NUTRIFIT/backend/dependencies/auth.py)
+2026-04-22 20:20:57,031 - main - WARNING - Failed to import module 'routers.storage': cannot import name 'get_admin_user' from 'dependencies.auth' (/Users/marcy/Development/Art/NUTRIFIT/backend/dependencies/auth.py)
+2026-04-22 20:20:57,042 - main - INFO - Included router: routers.user.router
+2026-04-22 20:20:57,088 - main - INFO - Included router: routers.weight_entries.router
+2026-04-22 20:20:57,089 - main - INFO - === Application startup initiated ===
+2026-04-22 20:21:10,293 - main - INFO - === Application shutdown ===

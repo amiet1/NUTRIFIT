@@ -1,0 +1,11 @@
+2026-04-26 19:23:34,048 - main - INFO - === Logging system initialized ===
+2026-04-26 19:23:35,298 - main - INFO - Included router: routers.auth.router
+2026-04-26 19:23:35,343 - main - INFO - Included router: routers.diet_plans.router
+2026-04-26 19:23:35,345 - main - INFO - Included router: routers.health.router
+2026-04-26 19:23:35,385 - main - INFO - Included router: routers.meal_logs.router
+2026-04-26 19:23:35,406 - main - INFO - Included router: routers.settings.router
+2026-04-26 19:23:35,444 - main - INFO - Included router: routers.storage.router
+2026-04-26 19:23:35,451 - main - INFO - Included router: routers.user.router
+2026-04-26 19:23:35,492 - main - INFO - Included router: routers.weight_entries.router
+2026-04-26 19:23:35,493 - main - INFO - === Application startup initiated ===
+2026-04-26 19:23:53,773 - main - INFO - === Application shutdown ===

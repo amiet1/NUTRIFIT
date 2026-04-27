@@ -1,0 +1,6 @@
+2026-04-22 19:25:48,545 - main - INFO - === Logging system initialized ===
+2026-04-22 19:25:49,268 - main - WARNING - Failed to import module 'routers.auth': cannot import name 'verify_token' from 'core.auth' (/Users/marcy/Development/Art/NUTRIFIT/backend/core/auth.py)
+2026-04-22 19:25:49,269 - main - WARNING - Failed to import module 'routers.diet_plans': cannot import name 'verify_token' from 'core.auth' (/Users/marcy/Development/Art/NUTRIFIT/backend/core/auth.py)
+2026-04-22 19:25:49,270 - main - INFO - Included router: routers.health.router
+2026-04-22 19:25:49,271 - main - INFO - === Application startup initiated ===
+2026-04-22 19:44:51,117 - main - INFO - === Application shutdown ===

@@ -1,0 +1,14 @@
+2026-04-26 19:27:24,795 - main - INFO - === Logging system initialized ===
+2026-04-26 19:27:25,652 - main - INFO - Included router: routers.auth.router
+2026-04-26 19:27:25,698 - main - INFO - Included router: routers.diet_plans.router
+2026-04-26 19:27:25,699 - main - INFO - Included router: routers.health.router
+2026-04-26 19:27:25,809 - main - INFO - Included router: routers.meal_logs.router
+2026-04-26 19:27:25,831 - main - INFO - Included router: routers.settings.router
+2026-04-26 19:27:25,871 - main - INFO - Included router: routers.storage.router
+2026-04-26 19:27:25,896 - main - INFO - Included router: routers.user.router
+2026-04-26 19:27:25,937 - main - INFO - Included router: routers.weight_entries.router
+2026-04-26 19:27:25,938 - main - INFO - === Application startup initiated ===
+2026-04-26 19:27:46,914 - routers.auth - INFO - [token/exchange] Manual bypass triggered for Admin
+2026-04-26 19:27:49,846 - routers.auth - INFO - [token/exchange] Manual bypass triggered for Admin
+2026-04-26 19:28:18,655 - routers.auth - INFO - [token/exchange] Manual bypass triggered for Admin
+2026-04-26 19:32:05,985 - main - INFO - === Application shutdown ===

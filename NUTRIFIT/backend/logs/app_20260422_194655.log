@@ -1,0 +1,11 @@
+2026-04-22 19:46:55,445 - main - INFO - === Logging system initialized ===
+2026-04-22 19:46:56,047 - main - WARNING - Failed to import module 'routers.auth': No module named 'core.auth'
+2026-04-22 19:46:56,048 - main - WARNING - Failed to import module 'routers.diet_plans': unexpected indent (diet_plans.py, line 12)
+2026-04-22 19:46:56,049 - main - INFO - Included router: routers.health.router
+2026-04-22 19:46:56,314 - main - WARNING - Failed to import module 'routers.meal_logs': No module named 'core.auth'
+2026-04-22 19:46:56,314 - main - WARNING - Failed to import module 'routers.settings': No module named 'core.auth'
+2026-04-22 19:46:56,315 - main - WARNING - Failed to import module 'routers.storage': No module named 'core.auth'
+2026-04-22 19:46:56,316 - main - WARNING - Failed to import module 'routers.user': No module named 'core.auth'
+2026-04-22 19:46:56,319 - main - WARNING - Failed to import module 'routers.weight_entries': No module named 'core.auth'
+2026-04-22 19:46:56,320 - main - INFO - === Application startup initiated ===
+2026-04-22 19:46:57,834 - main - INFO - === Application shutdown ===

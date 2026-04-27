@@ -1,0 +1,6 @@
+2026-04-22 16:53:24,329 - main - INFO - === Logging system initialized ===
+2026-04-22 16:53:25,065 - main - WARNING - Failed to import module 'routers.auth': 'Settings' object has no attribute 'database_url'
+2026-04-22 16:53:25,066 - main - WARNING - Failed to import module 'routers.diet_plans': 'Settings' object has no attribute 'database_url'
+2026-04-22 16:53:25,067 - main - INFO - Included router: routers.health.router
+2026-04-22 16:53:25,068 - main - INFO - === Application startup initiated ===
+2026-04-22 17:09:09,232 - main - INFO - === Application shutdown ===

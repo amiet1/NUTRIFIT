@@ -1,0 +1,6 @@
+2026-04-22 19:45:01,952 - main - INFO - === Logging system initialized ===
+2026-04-22 19:45:02,502 - main - WARNING - Failed to import module 'routers.auth': No module named 'core.auth'
+2026-04-22 19:45:02,739 - main - WARNING - Failed to import module 'routers.diet_plans': No module named 'core.auth'
+2026-04-22 19:45:02,740 - main - INFO - Included router: routers.health.router
+2026-04-22 19:45:02,742 - main - INFO - === Application startup initiated ===
+2026-04-22 19:45:10,516 - main - INFO - === Application shutdown ===

@@ -1,0 +1,11 @@
+2026-04-25 15:52:06,868 - main - INFO - === Logging system initialized ===
+2026-04-25 15:52:07,748 - main - WARNING - Failed to import module 'routers.auth': unindent does not match any outer indentation level (auth.py, line 147)
+2026-04-25 15:52:08,292 - main - INFO - Included router: routers.diet_plans.router
+2026-04-25 15:52:08,293 - main - INFO - Included router: routers.health.router
+2026-04-25 15:52:08,338 - main - INFO - Included router: routers.meal_logs.router
+2026-04-25 15:52:08,358 - main - INFO - Included router: routers.settings.router
+2026-04-25 15:52:08,391 - main - INFO - Included router: routers.storage.router
+2026-04-25 15:52:08,409 - main - INFO - Included router: routers.user.router
+2026-04-25 15:52:08,448 - main - INFO - Included router: routers.weight_entries.router
+2026-04-25 15:52:08,449 - main - INFO - === Application startup initiated ===
+2026-04-25 15:52:33,154 - main - INFO - === Application shutdown ===

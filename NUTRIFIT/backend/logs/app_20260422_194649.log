@@ -1,0 +1,11 @@
+2026-04-22 19:46:49,418 - main - INFO - === Logging system initialized ===
+2026-04-22 19:46:49,918 - main - WARNING - Failed to import module 'routers.auth': No module named 'core.auth'
+2026-04-22 19:46:50,157 - main - WARNING - Failed to import module 'routers.diet_plans': No module named 'core.auth'
+2026-04-22 19:46:50,158 - main - INFO - Included router: routers.health.router
+2026-04-22 19:46:50,172 - main - WARNING - Failed to import module 'routers.meal_logs': No module named 'core.auth'
+2026-04-22 19:46:50,173 - main - WARNING - Failed to import module 'routers.settings': No module named 'core.auth'
+2026-04-22 19:46:50,174 - main - WARNING - Failed to import module 'routers.storage': No module named 'core.auth'
+2026-04-22 19:46:50,175 - main - WARNING - Failed to import module 'routers.user': No module named 'core.auth'
+2026-04-22 19:46:50,179 - main - WARNING - Failed to import module 'routers.weight_entries': No module named 'core.auth'
+2026-04-22 19:46:50,198 - main - INFO - === Application startup initiated ===
+2026-04-22 19:46:54,766 - main - INFO - === Application shutdown ===
